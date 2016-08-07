@@ -11,3 +11,9 @@ $(".header-menu-search").click(function() {
 	$("form").fadeToggle(400);
 });
 
+
+
+// gallery
+$(function() {
+	$('#dg-container').gallery();
+});

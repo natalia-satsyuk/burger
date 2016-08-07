@@ -458,6 +458,10 @@
 		background: url("../images/back-blue.png") center no-repeat;
 		background-size: cover;
 
+		@media screen and (max-width: 480px) and (min-width: 320px) {
+			display: none;
+		}
+
 		.gallery {
 			padding-top: 80px;
 			text-align: center;
@@ -475,6 +479,12 @@
 				padding-bottom: 40px;
 			}	
 		}
+
+		.for-gallery {
+			overflow: hidden;
+
+			
+		}
 	}
 // end of GALLERY
 
@@ -491,6 +501,8 @@
 
 			@media screen and (max-width: 480px) and (min-width: 320px) {
 				padding: 5px;
+				padding-top: 15px;
+				background-color: #fff;
 			}
 
 			.person-image {
@@ -741,3 +753,66 @@
  	}
 }
 // end of FOOTER
+
+// GALLERY
+
+.dg-container {
+	height: 250px;
+}
+
+.dg-wrapper a{
+	width: 370px;
+	height: 316px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -185px;
+	background: transparent url(../images/back-burger.png)center no-repeat;
+	background-size: cover;
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+
+	// @media screen and (max-width: 992px) and (min-width: 481px) {
+	// 	width: 326px;
+	// 	margin-left: -163px;
+	// }
+}	
+
+.dg-wrapper a img{
+	display: block;
+	padding: 0;
+	margin: 0 auto;
+	height: 315px;
+}
+
+
+.dg-container nav{
+	width: 100%;
+	position: absolute;
+	z-index: 1000;
+	bottom: 50%;
+	left: 0;
+	margin-left: 0;
+}	
+
+.dg-container nav .dg-prev,
+.dg-container nav .dg-next{
+	text-indent: 0;
+	float: none;
+	font-size: 30px;
+	color: #fff;
+	cursor:pointer;
+	width: 24px;
+	height: 25px;
+	opacity: 0.8;
+	position: absolute;
+	
+	background: none;
+}
+
+.dg-container nav .dg-prev{
+	left: 1%;
+} 
+.dg-container nav .dg-next{
+	right: 1%;
+}
