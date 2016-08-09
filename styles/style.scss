@@ -124,12 +124,10 @@
 
 				form {
 					display: none;
-					// width: 100%;
 					position: absolute;
 					top: 0;
 					right: 6%;
-					// background-color: rgba(0,0,0,0.5);
-
+					
 					@media screen and (max-width: 1200px) and (min-width: 993px) {
 						right: 12%;
 					}
@@ -141,7 +139,6 @@
 					@media screen and (max-width: 768px) and (min-width: 320px) {
 						right: 14%;
 						z-index: 1;
-						// background-color: rgba(0,0,0,0.8);
 					}	
 
 					@media screen and (max-width: 480px) and (min-width: 320px) {
@@ -164,8 +161,6 @@
 					}
 				}
 			}
-		
-			
 		}
 
 		.header-info {
@@ -349,7 +344,7 @@
 		img {
 			margin-bottom: -110px;
 
-			@media screen and (max-width: 992px) and (min-width: 768px) {
+			@media screen and (max-width: 992px) and (min-width: 769px) {
 				width: 100%;
 			}
 
@@ -399,7 +394,7 @@
 	.today {
 		padding: 35px 70px 0;
 
-		@media screen and (max-width: 768px) and (min-width: 480px) {
+		@media screen and (max-width: 768px) and (min-width: 481px) {
 			padding: 30px;
 		}
 
@@ -422,7 +417,7 @@
 		.today-text {
 			padding-top: 140px;
 
-			@media screen and (max-width: 1200px) and (min-width: 992px) {
+			@media screen and (max-width: 1200px) and (min-width: 993px) {
 				padding-top: 70px;
 			}	
 
@@ -490,7 +485,11 @@
 
 // PERSON
 	.wrapper-person {
-		background-color: #eff3f3;
+		// background-color: #eff3f3;
+
+		// @media screen and (max-width: 480px) and (min-width: 320px) {
+		// 	display: none;
+		// }
 
 		.person {
 			padding: 50px 100px;
@@ -511,7 +510,7 @@
 				border-radius: 100px;
 
 				@media screen and (max-width: 768px) and (min-width: 320px) {
-					width: 146px;
+					width: 16%;
 					margin: 0 auto;
 				}
 
@@ -530,7 +529,7 @@
 					padding-left: 40px;
 				}
 
-				@media screen and (max-width: 769px) and (min-width: 320px) {
+				@media screen and (max-width: 768px) and (min-width: 320px) {
 					padding: 10px;
 					text-align: center;
 				}
@@ -541,7 +540,7 @@
 					line-height: 21px;
 					color: #566473;
 
-					@media screen and (max-width: 769px) and (min-width: 320px) {
+					@media screen and (max-width: 768px) and (min-width: 320px) {
 						padding-bottom: 10px;
 					}
 				}
@@ -564,7 +563,7 @@
 	.sign-up {
 		padding: 100px 70px 75px;
 
-		@media screen and (max-width: 769px) and (min-width: 481px) {
+		@media screen and (max-width: 768px) and (min-width: 481px) {
 			padding: 30px;
 		}
 
@@ -698,8 +697,6 @@
 
 				@media screen and (max-width: 480px) and (min-width: 320px) {
 					padding: 10px 25px;
-					// margin-left: 0;
-					// margin-top: 10px;
 					margin: 15px auto;
 					display: block;
 					width: 180px;
@@ -754,13 +751,15 @@
 }
 // end of FOOTER
 
-// GALLERY
+// ---------
+
+// GALLERY (slick - redefinition)
 
 .dg-container {
 	height: 250px;
 }
 
-.dg-wrapper a{
+.dg-wrapper a {
 	width: 370px;
 	height: 316px;
 	display: block;
@@ -771,11 +770,6 @@
 	background: transparent url(../images/back-burger.png)center no-repeat;
 	background-size: cover;
 	box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
-
-	// @media screen and (max-width: 992px) and (min-width: 481px) {
-	// 	width: 326px;
-	// 	margin-left: -163px;
-	// }
 }	
 
 .dg-wrapper a img{
@@ -816,3 +810,26 @@
 .dg-container nav .dg-next{
 	right: 1%;
 }
+
+// PERSON-Gallery  (slick - redefinition)
+
+
+.slick-prev {
+	left: 0;
+}
+.slick-prev:before {
+    content:"\f053";
+    color: #74B7E3;
+    font: 28px FontAwesome;
+   
+} 
+
+.slick-next {
+	right: 0;
+}
+.slick-next:before {
+    content:"\f054";
+    color: #74B7E3;
+    font: 28px FontAwesome;
+   
+}    
