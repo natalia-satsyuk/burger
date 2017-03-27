@@ -1,7 +1,4 @@
 
-// Raavi
-// Raleway-regular
-
 * {
 	box-sizing: border-box;
 } 
@@ -23,9 +20,8 @@
 }
 
 // HEADER
-
 .wrapper-header {
-	background: url("../images/back-burger.png") center no-repeat;
+	background: url("../images/back-burger.jpg") center no-repeat;
 	background-size: cover;
 	overflow: hidden;
 
@@ -290,7 +286,6 @@
 // end of HEADER
 
 // CHEKOUT
-
 .wrapper-checkout {
 	background-color: rgba(52, 152, 219, 0.8);
 
@@ -445,7 +440,7 @@
 
 // GALLERY
 	.wrapper-gallery {
-		background: url("../images/back-blue.png") center no-repeat;
+		background: url("../images/back-blue.jpg") center no-repeat;
 		background-size: cover;
 
 		@media screen and (max-width: 480px) and (min-width: 320px) {
@@ -545,7 +540,7 @@
 
 // SIGN-UP
 .wrapper-sign-up {
-	background: url("../images/back-brown.png") center no-repeat;
+	background: url("../images/back-brown.jpg") center no-repeat;
 	background-size: cover;
 
 	.sign-up {
@@ -739,8 +734,6 @@
 }
 // end of FOOTER
 
-// ---------
-
 // GALLERY (slick - redefinition)
 
 .dg-container {
@@ -755,7 +748,7 @@
 	top: 0;
 	left: 50%;
 	margin-left: -185px;
-	background: transparent url(../images/back-burger.png)center no-repeat;
+	background: transparent url(../images/back-burger.jpg)center no-repeat;
 	background-size: cover;
 	box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
 }	
@@ -795,13 +788,12 @@
 .dg-container nav .dg-prev{
 	left: 1%;
 } 
+
 .dg-container nav .dg-next{
 	right: 1%;
 }
 
 // PERSON-Gallery  (slick - redefinition)
-
-
 .slick-prev {
 	left: 0;
 }
@@ -809,15 +801,14 @@
     content:"\f053";
     color: #74B7E3;
     font: 28px FontAwesome;
-   
 } 
 
 .slick-next {
 	right: 0;
 }
+
 .slick-next:before {
     content:"\f054";
     color: #74B7E3;
     font: 28px FontAwesome;
-   
 }    
